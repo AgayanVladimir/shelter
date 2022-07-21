@@ -126,3 +126,43 @@ header {
 	background: #F1CDB3;
 	border-radius: 100px;
 }
+
+
+.about {
+	padding: 80px 0px 100px;
+}
+
+.about__wrapper {
+	display: flex;
+}
+
+.about__info {
+	margin-top: 14px;
+	margin-left: 126px;
+
+}
+
+.about__wrapper img {
+	margin-left: 175px;
+}
+
+
+.about__info_title {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #545454;
+	max-width: 370px;
+}
+
+.about__info_text {
+	font-family: 'Arial';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+	color: #4C4C4C;
+	max-width: 430px;
+	margin-top: 25px;
+}
