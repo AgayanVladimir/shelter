@@ -6,6 +6,9 @@
 
 header {
 	padding: 60px 0px;
+	position: absolute;
+	width: 100%;
+
 
 }
 
@@ -17,6 +20,7 @@ header {
 .header__wrapper {
 	display: flex;
 	justify-content: space-between;
+
 }
 
 .header__logo {
@@ -60,11 +64,11 @@ header {
 
 
 .menu__link a {
+	font-family: 'Arial';
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 160%;
-	font-family: 'Arial';
 	color: #CDCDCD;
 }
 
@@ -72,4 +76,53 @@ header {
 	color: #FAFAFA;
 	border-bottom: 3px solid #F1CDB3;
 	padding-bottom: 7px;
+}
+
+.introductory-block {
+	padding-top: 180px;
+	background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+
+}
+
+.introductory-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.introductory-block__info {
+	max-width: 460px;
+	margin-top: 163px;
+}
+
+.info__title {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 130%;
+	color: #FFFFFF;
+	margin-bottom: 42px;
+	max-width: 325px;
+}
+
+.info__text {
+	font-family: 'Arial';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+	color: #CDCDCD;
+	margin-bottom: 56px;
+
+}
+
+.info__button {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 130%;
+	color: #292929;
+	letter-spacing: 0.06em;
+	text-decoration: none;
+	padding: 15px 45px;
+	background: #F1CDB3;
+	border-radius: 100px;
 }
