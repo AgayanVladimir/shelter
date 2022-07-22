@@ -129,7 +129,7 @@ header {
 }
 
 .info__button:hover {
-	background: #F1CDB3;
+	background-color: #F1CDB3;
 	border-radius: 100px;
 }
 
@@ -175,7 +175,7 @@ header {
 
 .friends {
 	padding: 80px 0px 100px;
-	background: #F6F6F6;
+	background-color: #F6F6F6;
 }
 
 .friends__title {
@@ -218,9 +218,13 @@ header {
 }
 
 .friends__body_items {
-	background: #FAFAFA;
+	background-color: #FAFAFA;
 	border-radius: 9px;
 	padding-bottom: 30px;
+}
+
+.friends__body_items:hover {
+	background-color: #FFFFFF;
 }
 
 .friends__body_items:not(:first-child) {
@@ -268,11 +272,11 @@ header {
 }
 
 .friends__left-arrow:hover {
-	background: #FDDCC4;
+	background-color: #FDDCC4;
 }
 
 .friends__right-arrow:hover {
-	background: #FDDCC4;
+	background-color: #FDDCC4;
 }
 
 .friends__button {
@@ -285,7 +289,7 @@ header {
 	text-decoration: none;
 	display: inline-block;
 	text-align: center;
-	background: #F1CDB3;
+	background-color: #F1CDB3;
 	border-radius: 100px;
 	padding: 15px 45px;
 
@@ -338,4 +342,67 @@ header {
 	letter-spacing: 0.06em;
 	color: #545454;
 	text-align: center;
+}
+
+
+.donation {
+	background-color: #F6F6F6;
+	padding: 81px 0px 101px;
+}
+
+.donation__wrapper {
+	display: flex;
+	justify-content: center;
+
+}
+
+.donation__info {
+	max-width: 380px;
+	margin-left: 30px;
+}
+
+.donation__title {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #545454;
+	margin-bottom: 20px;
+}
+
+.donation__bank-name {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 110%;
+	letter-spacing: 0.06em;
+	color: #545454;
+	margin-bottom: 20px;
+}
+
+.donation__card-number {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #545454;
+	margin-bottom: 20px;
+	background-image: url(../img/icons/credit-card.svg);
+	background-repeat: no-repeat;
+	padding: 15px 0px 15px 60px;
+	background-position: 15px center;
+	background-color: #F1CDB3;
+	border-radius: 9px;
+
+}
+
+.donation__text {
+	font-family: 'Arial';
+	font-style: italic;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	color: #B2B2B2;
 }
