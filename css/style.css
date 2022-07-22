@@ -80,7 +80,7 @@ header {
 
 .introductory-block {
 	padding-top: 180px;
-	background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+	background-image: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
 
 }
 
@@ -369,6 +369,7 @@ header {
 	letter-spacing: 0.06em;
 	color: #545454;
 	margin-bottom: 20px;
+	max-width: 300px;
 }
 
 .donation__bank-name {
@@ -405,4 +406,96 @@ header {
 	font-size: 12px;
 	line-height: 150%;
 	color: #B2B2B2;
+}
+
+footer {
+	padding-top: 40px;
+	background-image: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+}
+
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.questions-block {
+	margin-top: 16px;
+	flex-basis: 300px;
+}
+
+.questions__first-title {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #FFFFFF;
+	margin-bottom: 40px;
+}
+
+.questions__email {
+	margin-bottom: 40px;
+}
+
+.questions__email a {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #F1CDB3;
+	text-decoration: none;
+	background-image: url(../img/icons/icon-email.svg);
+	background-repeat: no-repeat;
+	padding: 5px 0px 5px 60px;
+	background-position: left center;
+
+}
+
+
+
+.questions__tel a {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #F1CDB3;
+	text-decoration: none;
+	background-image: url(../img/icons/icon-phone.svg);
+	background-repeat: no-repeat;
+
+	padding: 5px 0px 5px 60px;
+
+	background-position: left center;
+}
+
+.visiting-block {
+	margin-top: 16px;
+	flex-basis: 300px;
+}
+
+.visiting__title {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #FFFFFF;
+	margin-bottom: 2px;
+}
+
+.visiting__address {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #F1CDB3;
+	background-image: url(../img/icons/icon-marker.svg);
+	background-repeat: no-repeat;
+	padding: 5px 0px 5px 42px;
+	background-position: left center;
+	margin-top: 32px;
 }
