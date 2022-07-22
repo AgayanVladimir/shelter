@@ -123,6 +123,12 @@ header {
 	letter-spacing: 0.06em;
 	text-decoration: none;
 	padding: 15px 45px;
+	background-color: white;
+	border: 2px solid #F1CDB3;
+	border-radius: 100px;
+}
+
+.info__button:hover {
 	background: #F1CDB3;
 	border-radius: 100px;
 }
@@ -165,4 +171,123 @@ header {
 	color: #4C4C4C;
 	max-width: 430px;
 	margin-top: 25px;
+}
+
+.friends {
+	padding: 80px 0px 100px;
+	background: #F6F6F6;
+}
+
+.friends__title {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #545454;
+	text-align: center;
+	margin-bottom: 60px;
+
+}
+
+.friends__wrapper {
+	display: flex;
+	align-items: center;
+
+	margin-bottom: 60px;
+
+}
+
+.friends__left-arrow {
+	width: 52px;
+	height: 52px;
+	border: 2px solid #F1CDB3;
+	border-radius: 100px;
+	cursor: pointer;
+
+}
+
+.friends__body {
+	display: flex;
+	margin-left: 53px;
+}
+
+.friends__body_items img {
+	border-radius: 9px;
+
+}
+
+.friends__body_items {
+	background: #FAFAFA;
+	border-radius: 9px;
+	padding-bottom: 30px;
+}
+
+.friends__body_items:not(:first-child) {
+	margin-left: 90px;
+}
+
+.friends__body_name {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	color: #545454;
+	margin: 30px 0px;
+}
+
+.button-box {
+	text-align: center;
+
+}
+
+.friends__body__button {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 130%;
+	padding: 15px 45px;
+	letter-spacing: 0.06em;
+	color: #292929;
+	text-decoration: none;
+	border: 2px solid #F1CDB3;
+	border-radius: 100px;
+	display: inline-block;
+
+}
+
+.friends__right-arrow {
+	width: 52px;
+	height: 52px;
+	border: 2px solid #F1CDB3;
+	border-radius: 100px;
+	cursor: pointer;
+	margin-left: 53px;
+}
+
+.friends__left-arrow:hover {
+	background: #FDDCC4;
+}
+
+.friends__right-arrow:hover {
+	background: #FDDCC4;
+}
+
+.friends__button {
+	font-family: 'Georgia';
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #292929;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	background: #F1CDB3;
+	border-radius: 100px;
+	padding: 15px 45px;
+
+
 }
