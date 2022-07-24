@@ -95,6 +95,9 @@ header {
 	border: 2px solid #CDCDCD;
 	border-radius: 100px;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 
 }
@@ -112,6 +115,9 @@ header {
 	border-radius: 100px;
 	cursor: pointer;
 	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .page-number {
@@ -129,6 +135,7 @@ header {
 	border: 2px solid #F1CDB3;
 	border-radius: 100px;
 	margin-left: 20px;
+
 }
 
 .page-number:hover {
@@ -149,10 +156,16 @@ header {
 	border-radius: 100px;
 	cursor: pointer;
 	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .right-arrows {
 	font-family: 'Georgia';
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 52px;
 	height: 52px;
 	font-weight: 400;
@@ -164,4 +177,8 @@ header {
 	border-radius: 100px;
 	cursor: pointer;
 	margin-left: 20px;
+}
+
+.buttons a {
+	text-decoration: none;
 }
