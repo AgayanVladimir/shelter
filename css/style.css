@@ -20,7 +20,7 @@ header {
 .header__wrapper {
 	display: flex;
 	justify-content: space-between;
-
+	align-items: center
 }
 
 .header__logo {
@@ -35,6 +35,7 @@ header {
 	font-size: 32px;
 	line-height: 110%;
 	color: #F1CDB3;
+	letter-spacing: 0.06em;
 
 }
 
@@ -45,6 +46,7 @@ header {
 	line-height: 115%;
 	color: #FFFFFF;
 	margin-top: 10px;
+	letter-spacing: 0.1em;
 
 }
 
