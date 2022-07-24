@@ -6,6 +6,7 @@
 
 header {
 	padding: 30px 0px;
+	position: relative;
 }
 
 .header__logo {}
@@ -28,4 +29,139 @@ header {
 
 .active a {
 	color: #292929;
+}
+
+
+
+
+
+.friends {
+	padding: 80px 0px 100px;
+}
+
+
+.friends__title {
+	margin-bottom: 30px;
+}
+
+.friends__block {
+	margin: 0px 0px 60px 0px;
+
+
+
+
+
+
+}
+
+
+
+.friends__body_items:not(:first-child) {
+	margin-left: 0px;
+}
+
+.friends__first-row {
+	display: flex;
+	margin-top: 30px;
+}
+
+.friends__second-row {
+	display: flex;
+	margin-top: 30px;
+}
+
+.friends__first-row .friends__body_items:not(:first-child) {
+	margin-left: 40px;
+}
+
+.friends__second-row .friends__body_items:not(:first-child) {
+	margin-left: 40px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.left-arrows {
+	font-family: 'Georgia';
+	width: 52px;
+	height: 52px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #CDCDCD;
+	border: 2px solid #CDCDCD;
+	border-radius: 100px;
+	cursor: pointer;
+
+
+}
+
+.left-arrow {
+	font-family: 'Georgia';
+	width: 52px;
+	height: 52px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #CDCDCD;
+	border: 2px solid #CDCDCD;
+	border-radius: 100px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.page-number {
+	font-family: 'Georgia';
+	width: 52px;
+	height: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #292929;
+	border: 2px solid #F1CDB3;
+	border-radius: 100px;
+	margin-left: 20px;
+}
+
+.page-number:hover {
+	background-color: #FDDCC4;
+	border-radius: 100px;
+}
+
+.right-arrow {
+	font-family: 'Georgia';
+	width: 52px;
+	height: 52px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #292929;
+	border: 2px solid #F1CDB3;
+	border-radius: 100px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.right-arrows {
+	font-family: 'Georgia';
+	width: 52px;
+	height: 52px;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #292929;
+	border: 2px solid #F1CDB3;
+	border-radius: 100px;
+	cursor: pointer;
+	margin-left: 20px;
 }

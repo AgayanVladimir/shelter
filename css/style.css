@@ -20,7 +20,7 @@ header {
 .header__wrapper {
 	display: flex;
 	justify-content: space-between;
-	align-items: center
+	align-items: center;
 }
 
 .header__logo {
@@ -215,7 +215,7 @@ header {
 }
 
 .friends__body_items img {
-	border-radius: 9px;
+	border-radius: 9px 9px 0px 0px;
 
 }
 
