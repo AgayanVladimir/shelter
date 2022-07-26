@@ -4,6 +4,17 @@
 	box-sizing: border-box;
 }
 
+button {
+	background-color: transparent;
+	border: none;
+	font-family: inherit
+}
+
+img {
+	max-width: 100%;
+}
+
+/* -------------------------------header------------------------------- */
 header {
 	padding: 60px 0px;
 	position: absolute;
@@ -54,10 +65,12 @@ header {
 
 .menu__list {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .menu__link {
 	list-style: none;
+	line-height: 160%;
 }
 
 .menu__link:not(:last-child) {
@@ -70,8 +83,12 @@ header {
 	text-decoration: none;
 	font-weight: 400;
 	font-size: 15px;
-	line-height: 160%;
 	color: #CDCDCD;
+}
+
+.menu__link a:hover {
+	color: #FAFAFA;
+
 }
 
 .active a {
@@ -80,8 +97,12 @@ header {
 	padding-bottom: 7px;
 }
 
+
+/* ------------------------------introductory--------------------------- */
+
 .introductory-block {
 	padding-top: 180px;
+
 	background-image: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
 
 }
@@ -90,6 +111,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 }
+
 
 .introductory-block__info {
 	max-width: 460px;
@@ -125,17 +147,19 @@ header {
 	letter-spacing: 0.06em;
 	text-decoration: none;
 	padding: 15px 45px;
-	background-color: white;
+	background-color: #F1CDB3;
 	border: 2px solid #F1CDB3;
 	border-radius: 100px;
+	display: inline-block;
 }
 
 .info__button:hover {
-	background-color: #F1CDB3;
+	background-color: #FDDCC4;
+	;
 	border-radius: 100px;
 }
 
-
+/*------------------------------------- about --------------------------------*/
 .about {
 	padding: 80px 0px 100px;
 }
@@ -175,6 +199,8 @@ header {
 	margin-top: 25px;
 }
 
+/* ----------------------------------------friends ----------------------------------------*/
+
 .friends {
 	padding: 80px 0px 100px;
 	background-color: #F6F6F6;
@@ -212,6 +238,7 @@ header {
 .friends__body {
 	display: flex;
 	margin-left: 53px;
+
 }
 
 .friends__body_items img {
@@ -223,6 +250,7 @@ header {
 	background-color: #FAFAFA;
 	border-radius: 9px;
 	padding-bottom: 30px;
+
 }
 
 .friends__body_items:hover {
@@ -261,7 +289,10 @@ header {
 	border: 2px solid #F1CDB3;
 	border-radius: 100px;
 	display: inline-block;
+}
 
+.friends__body__button:hover {
+	background-color: #FDDCC4;
 }
 
 .friends__right-arrow {
@@ -297,6 +328,12 @@ header {
 
 }
 
+.friends__button:hover {
+	background-color: #FDDCC4;
+	;
+}
+
+/*--------------------------------------------- help -----------------------------------*/
 
 .help {
 	padding: 80px 0px 98px;
@@ -346,6 +383,7 @@ header {
 	text-align: center;
 }
 
+/*--------------------------------------- donation ------------------------------------*/
 
 .donation {
 	background-color: #F6F6F6;
@@ -409,6 +447,8 @@ header {
 	line-height: 150%;
 	color: #B2B2B2;
 }
+
+/*-------------------------------------------- footer -----------------------------------*/
 
 footer {
 	padding-top: 40px;
@@ -500,4 +540,251 @@ footer {
 	padding: 5px 0px 5px 42px;
 	background-position: left center;
 	margin-top: 32px;
+}
+
+.header__burger {
+	display: none;
+}
+
+.first-line {
+	width: 30px;
+	height: 2px;
+	background-color: white;
+}
+
+.second-line {
+	width: 30px;
+	height: 2px;
+	background-color: white;
+	margin-top: 10px;
+}
+
+.third-line {
+	width: 30px;
+	height: 2px;
+	background-color: white;
+	margin-top: 10px;
+}
+
+/*--------------------------------------------- media ----------------------------------*/
+
+@media(max-width:1230px) {
+	.container {
+		max-width: 95%;
+	}
+}
+
+@media(max-width:1100px) {
+	.friends__body_items:last-child {
+		display: none;
+	}
+
+	.friends__wrapper {
+		justify-content: space-around;
+	}
+
+	.about__wrapper {
+		justify-content: center;
+	}
+
+	.introductory-wrapper img {
+
+		width: 60%;
+	}
+
+	.about__wrapper img {
+		margin: 0 auto;
+	}
+}
+
+@media(max-width:970px) {
+
+
+	.footer__wrapper {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.questions-block {
+		width: 50%;
+	}
+
+	.visiting-block {
+		width: 50%;
+	}
+
+	.footer__wrapper img {
+		margin-top: 60px;
+
+	}
+}
+
+@media(max-width:890px) {
+	.donation__wrapper img {
+		width: 50%;
+	}
+
+	.header {
+		padding: 30px 0px;
+	}
+
+	.introductory-block {
+		padding-bottom: 30px;
+
+	}
+
+	.introductory-wrapper img {
+		display: none;
+	}
+
+	.introductory-block__info {
+		margin: 0 auto;
+	}
+}
+
+@media(max-width:780px) {
+	.about__wrapper img {
+		height: 100%;
+
+	}
+
+	.donation__wrapper {
+		flex-wrap: wrap;
+	}
+
+	.donation__wrapper img {
+		width: 100%;
+	}
+
+	.donation {
+		padding-top: 40px;
+		padding-bottom: 50px;
+
+	}
+
+	.donation__info {
+		margin-top: 30px;
+	}
+
+
+
+}
+
+@media(max-width:700px) {
+	.about__wrapper {
+		flex-wrap: wrap;
+	}
+
+	.about__info {
+		margin: 40px auto;
+
+	}
+
+	.about {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+
+
+
+
+	.header__menu {
+		margin-left: 81px;
+
+	}
+
+	.menu__link {
+		line-height: 260%;
+	}
+
+	.friends__body__button {
+		font-size: 14px;
+		padding: 15px 30px;
+	}
+}
+
+@media(max-width:600px) {
+	.info__title {
+		font-size: 36px;
+		margin-top: 20px;
+	}
+
+
+
+	.friends__body_items:first-child {
+		display: none;
+	}
+
+
+	.friends__body .friends__body_items {
+		margin-left: 0px;
+
+
+	}
+
+	.friends__wrapper .friends__body {
+		margin-left: 0px;
+	}
+
+	.friends__right-arrow {
+		margin-left: 10px;
+	}
+
+	.friends__left-arrow {
+		margin-right: 10px;
+	}
+
+
+
+}
+
+@media(max-width:630px) {
+	footer {
+		padding: 30px 0px 0px 0px;
+	}
+
+	.questions-block {
+		flex-basis: 100%;
+	}
+
+	.visiting-block {
+		margin-top: 40px;
+		flex-basis: 100%;
+	}
+
+	.footer__wrapper img {
+		margin-top: 94px;
+	}
+}
+
+@media(max-width:420px) {
+	.info__title {
+		margin: 40px 0px 20px;
+	}
+
+	.header__menu {
+		margin-left: 50px;
+	}
+
+	.donation__card-number {
+		font-size: 18px;
+	}
+}
+
+@media(max-width:360px) {
+	.donation__card-number {
+		font-size: 15px;
+	}
+}
+
+@media(max-width:450px) {
+	.header__burger {
+		display: block;
+		margin-right: 40px;
+	}
+
+	.header__menu {
+		display: none;
+
+	}
 }
