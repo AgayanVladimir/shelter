@@ -190,11 +190,8 @@ header {
 	}
 }
 
-@media(max-width:600px) {
-	.friends__body_items:first-child {
-		display: block;
-	}
-}
+
+
 
 @media(max-width:940px) {
 	.friends__body__button {
@@ -219,7 +216,7 @@ header {
 	}
 
 	.friends__block .friends__first-row .friends__body_items {
-		margin-left: 0px;
+		margin-left: 20px;
 		margin-top: 30px;
 	}
 
@@ -230,9 +227,32 @@ header {
 	}
 
 	.friends__block .friends__second-row .friends__body_items {
-		margin-left: 0px;
+		margin-left: 20px;
 		margin-top: 30px;
 	}
 
+	.friends__body_items:first-child {
+		display: block;
+	}
 
+
+
+}
+
+@media(max-width:370px) {
+	.left-arrow {
+		margin-left: 10px;
+	}
+
+	.page-number {
+		margin-left: 10px;
+	}
+
+	.right-arrow {
+		margin-left: 10px;
+	}
+
+	.right-arrows {
+		margin-left: 10px;
+	}
 }

@@ -227,12 +227,20 @@ header {
 }
 
 .friends__left-arrow {
-	width: 52px;
-	height: 52px;
 	border: 2px solid #F1CDB3;
 	border-radius: 100px;
 	cursor: pointer;
 
+	padding: 23px 19px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.friends__left-arrow img {
+	width: 14px;
+	height: 6px;
 }
 
 .friends__body {
@@ -296,12 +304,20 @@ header {
 }
 
 .friends__right-arrow {
-	width: 52px;
-	height: 52px;
+
 	border: 2px solid #F1CDB3;
 	border-radius: 100px;
 	cursor: pointer;
 	margin-left: 53px;
+	padding: 23px 19px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.friends__right-arrow img {
+	width: 14px;
+	height: 6px;
 }
 
 .friends__left-arrow:hover {
@@ -624,6 +640,14 @@ footer {
 		width: 50%;
 	}
 
+	.friends__body {
+		margin-left: 15px;
+	}
+
+	.friends__right-arrow {
+		margin-left: 10px;
+	}
+
 	.header {
 		padding: 30px 0px;
 	}
@@ -666,6 +690,24 @@ footer {
 		margin-top: 30px;
 	}
 
+	.friends__body_items:first-child {
+		display: none;
+	}
+
+	.friends__wrapper .friends__body {
+		margin-left: 0px;
+	}
+
+	.friends__body_items:not(:first-child) {
+		margin-left: 0px;
+	}
+
+	.friends__body_items {
+		margin-left: 0px;
+	}
+
+
+
 
 
 }
@@ -688,19 +730,23 @@ footer {
 
 
 
+
+
+
+
+	.header__burger {
+		display: block;
+		margin-right: 40px;
+	}
+
 	.header__menu {
-		margin-left: 81px;
+		display: none;
 
 	}
 
-	.menu__link {
-		line-height: 260%;
-	}
 
-	.friends__body__button {
-		font-size: 14px;
-		padding: 15px 30px;
-	}
+
+
 }
 
 @media(max-width:600px) {
@@ -711,20 +757,10 @@ footer {
 
 
 
-	.friends__body_items:first-child {
-		display: none;
-	}
 
 
-	.friends__body .friends__body_items {
-		margin-left: 0px;
 
 
-	}
-
-	.friends__wrapper .friends__body {
-		margin-left: 0px;
-	}
 
 	.friends__right-arrow {
 		margin-left: 10px;
@@ -757,6 +793,49 @@ footer {
 	}
 }
 
+@media(max-width:500px) {
+	.friends__body_items {
+
+		order: 1;
+	}
+
+	.arrow-box-left {
+		order: 2;
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+
+
+
+	}
+
+	.friends__left-arrow {
+		margin-top: 20px;
+
+	}
+
+	.friends__right-arrow {
+		margin-top: 20px;
+
+
+	}
+
+
+	.arrow-box-right {
+		order: 3;
+		width: 50%;
+		display: flex;
+		justify-content: flex-start;
+
+
+	}
+
+	.friends__wrapper {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
 @media(max-width:420px) {
 	.info__title {
 		margin: 40px 0px 20px;
@@ -769,6 +848,9 @@ footer {
 	.donation__card-number {
 		font-size: 18px;
 	}
+
+
+
 }
 
 @media(max-width:360px) {
